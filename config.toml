@@ -1,0 +1,88 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "Christodoulos Fragkoudakis"
+theme = "LoveIt"
+
+enableEmoji = true
+
+[params]
+	version = "0.2.X"
+
+[author]
+  name = "Christodoulos Fragkoudakis"
+  email = "christodoulos.fragkoudakis@gmail.com"
+  link = "https://fragkoudakis.gr"
+
+[menu]
+	[[menu.main]]
+		identifier = "posts"
+		name = "Posts"
+		url = "/posts"
+		weight = 1
+	[[menu.main]]
+		identifier = "tags"
+		name = "Tags"
+		url = "/tags"
+		weight = 2
+	[[menu.main]]
+		identifier = "documents"
+		name = "Documents"
+		url = "/documents"
+		weight = 2
+
+[params.social]
+  Facebook = "christodoulos.fragkoudakis"
+  Github = "christodoulos"
+  Linkedin = "fragkoudakis"
+  Email = "chrstodoulos.fragkoudakis@gmail.com"
+  RSS = true
+
+[markup]
+	[markup.highlight]
+		noClasses = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params.search]
+  enable = true
+  type = "lunr"
+  placeholder = ""
+  maxResultLength = 10
+  snippetLength = 30
+  highlightTag = "em"
+  absoluteURL = false
+  [params.search.algolia]
+    index = ""
+    appID = ""
+    searchKey = ""
+
+[params.header]
+  desktopMode = "fixed"
+  mobileMode = "auto"
+  [params.header.title]
+    name = "Christodoulos Fragkoudakis"
+
+[params.footer]
+  enable = true
+  hugo = false
+  copyright = true
+  author = true
+  license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+[params.home]
+  rss = 10
+  [params.home.profile]
+    enable = true
+    gravatarEmail = ""
+    avatarURL = "/img/me0300.jpg"
+    title = "Christodoulos Fragkoudakis"
+    subtitle = "Welcome to my homepage"
+    typeit = true
+    social = true
+    disclaimer = ""
+
+[params.page]
+  twemoji = true
+  [params.page.toc]
+    enable = true
